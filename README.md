@@ -1,2 +1,2 @@
-# hy-motion.github.io
-This is the official web for HYPERmotion
+# robonurse-vla.github.io/
+This is the official web for RoboNurse-VLA
