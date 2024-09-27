@@ -9,22 +9,6 @@
   
   <title>HYPERmotion</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-  -->
-
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
@@ -49,48 +33,6 @@
   <script>
     // Your existing JavaScript code if any
   </script>
-
-<!--
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
--->
 
 <section class="hero">
   <div class="hero-body">
@@ -199,12 +141,13 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">HYPERmotion</span> enables the humanoid robot to <strong>learn</strong>, <strong>plan</strong>, and <strong>select</strong> behaviors to complete autonomous long-horizon tasks.
+        <span class="dnerf">RoboNurse-VLA</span> enables the robot to <strong>recognize</strong>, <strong>grasp</strong>, and <strong>shandover</strong> surgical instrument.
       </h2>
     </div>
   </div>
 </section>
 
+<!--
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -244,64 +187,6 @@
 </br>
   <b>Motion Library</b> 
 </h2>
-
-<!--
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 -->
 
 <section class="section">
@@ -312,23 +197,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Enabling humanoid robots to autonomously perform hybrid locomotion and manipulation 
-            in diverse environments can be beneficial for long-horizon tasks such as factory material handling, 
-            household chores, and work assistance. This requires extensive exploitation of intrinsic motion capabilities, 
-            extraction of affordances from rich environmental information, and planning of physical interaction behaviors. 
-            Despite recent progress has demonstrated impressive humanoid whole-body control abilities, 
-            they struggle to achieve versatility and adaptability for new tasks. In this work, 
-            we propose HYPERmotion, a framework that learns, selects and plans behaviors based on tasks 
-            in different scenarios. We combine reinforcement learning with whole-body model predictive control 
-            to generate motion for 37 actuated joints and create a motion library to store the learned skills. 
-            We further apply the online planning and reasoning features of the large language models (LLMs) 
-            to complex loco-manipulation tasks, constructing a hierarchical task graph that comprises a series 
-            of primitive behaviors to bridge lower-level execution with higher-level planning. By leveraging 
-            the interaction of distilled spatial geometry and 2D observation with a visual language model (VLM) 
-            to ground knowledge into a robotic morphology selector to choose appropriate actions in single- or 
-            dual-arm, legged or wheeled locomotion.  Experiments in both simulated and real-world settings show 
-            that learned whole-body skills can efficiently adapt to new tasks, demonstrating high autonomy from 
-            free-text instructions in unstructured scenes.
+            We introduce a novel robotic scrub nurse system, RoboNurse-VLA, built on a Vision- Language-Action (VLA) model
+            by integrating the Segment Anything Model 2 (SAM 2) and the Llama 2 language model. The proposed RoboNurse-VLA
+            system enables highly precise grasping and handover of surgical instruments in real-time based on voice commands
+            from the surgeon. Leveraging state- of-the-art vision and language models, the system can address key challenges
+            for object detection, pose optimization, and the handling of complex and difficult-to-grasp instruments. Through
+            extensive evaluations, RoboNurse-VLA demonstrates superior performance compared to existing models, achieving high
+            success rates in surgical instrument handovers, even with unseen tools and challenging items. This work presents a
+            significant step forward in autonomous surgical assistance, showcasing the potential of integrating VLA models for
+            real- world medical applications. 
           </p>
         </div>
       </div>
@@ -340,7 +217,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/P-Y_fzpjlhY?si=9S3ZT4HDTwwdufXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://youtu.be/JT10qDkUb38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
